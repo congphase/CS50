@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Hello!</title>
+        <link href="{% static 'birthday/styles.css'%}" rel="stylesheet"> 
     </head>
     <body>
         {% if birthdayflag %}
-            <h1>True true true!</h1>
+            <h1>True true true!<br>Happy birthday to you!</h1>
         {% else %}
             <h1>Wrong wrong wrong!</h1>
         {% endif %}
