@@ -13,3 +13,5 @@ Self-learn, first start with the Web development course
 **Record #3**: Create application tasks
 <br>Exposure to template inheritance, tags worth attention: `{% extends <"template-file.html"> %}`, `{% block <a-name> %}`, `{% endblock %}`
 <br>Namespace used to avoid calling the unwanted functions with the same name
+
+**Record #4**: Start Project 1 of the course - create a mini Wiki page
