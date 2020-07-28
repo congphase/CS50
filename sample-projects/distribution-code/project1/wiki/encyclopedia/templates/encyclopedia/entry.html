@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+   {{ entryTitle }} 
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entryTitle }}</h1>
+    <p>{{ entry }}</p>
+{% endblock %}
