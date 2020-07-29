@@ -12,7 +12,9 @@ def index(request):
 
 def entry(request, entryTitle):
     if(util.get_entry(entryTitle) == None):
-        return HttpResponseNotFound('404 :D')
+        return render(request, "encyclopedia/error404.html", {
+            "requestQueryString": request.build_absolute_uri()
+        })
     return render(request, "encyclopedia/entry.html", {
         "entryTitle": entryTitle,
         "entry": util.get_entry(entryTitle)
