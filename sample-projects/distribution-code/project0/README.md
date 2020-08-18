@@ -1,0 +1,1 @@
+This may not work properly for Internet Explorer 10 and older versions

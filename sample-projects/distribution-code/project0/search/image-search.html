@@ -3,15 +3,23 @@
     <head>
         <title>Image Search</title>
     </head>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .go-to-home-page {
+        #search-submit-button {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 60px;
         }
     </style>
     <body>
-        <div class="go-to-home-page">
+        <form method="GET" action="https://www.google.com/search">
+            <div class="ti-sb-container">
+                <input id="search-text-input" type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
+                <input id="search-submit-button" type="submit" value="Image Search">
+            </div>
+        </form>
+
+        <div class="go-to-google-search">
             <a href="index.html">Main Page</a>
         </div>
     </body>

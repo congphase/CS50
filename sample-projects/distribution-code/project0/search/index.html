@@ -2,24 +2,25 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <style>
-        .go-to-image-search {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    </style>
     <body>
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <div class="ti-sb-container">
+                <input id="search-text-input" type="text" name="q">
+                <div class="submit-button-lucky-container">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" name="btnI" value="I'm feeling lucky">
+                </div>
+            </div>
         </form>
         <div class="go-to-image-search">
             <a href="image-search.html">Image Search</a>
+        </div>
+
             <div class="go-to-advanced-search">
                 <a href="advanced-search.html">Advanced Search</a>
             </div>
-        </div>
     </body>
+
 </html>
